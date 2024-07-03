@@ -1,15 +1,32 @@
 <template>
-  <NavBar/>
+<section class="row">
+<LandingSection/>
+</section>
+<section class="row">
+
+</section>
+<section class="row">
+
+</section>
+<section class="row">
+
+</section>
+<section class="row">
+
+</section>
+<section class="row">
+
+</section>
     
   </template>
   
   <script>
-  import NavBar from '@/components/Navbar.vue/'
-  
-  export default {
+  import LandingSection from '@/components/LandingSection.vue'
+ export default {
     name: 'NavBar',
     components: {
-      NavBar
+    LandingSection
+     
     }
   }
   </script>
