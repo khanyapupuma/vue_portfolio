@@ -2,8 +2,10 @@
 
 /* App */
 #app {
-    background-color: #000000;
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    background-color: #120E0E;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-style: italic;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -48,4 +50,9 @@ img[alt= 'logo']{
 /*  */
 .nav-link{
     color:#CBBDBD ;
+}
+/* Footer */
+:is(.wrapper){
+    display: grid;
+    grid-template-rows: auto minmax(100dvh, 100%)auto;
 }
