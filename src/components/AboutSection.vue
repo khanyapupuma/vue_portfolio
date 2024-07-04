@@ -15,7 +15,7 @@
               <p class="lead" >
                 <span class="fname">Name: {{ info.name }}</span>
                 <span class="intro">Intro: {{ info.intro }}</span>
-                <span class="values">Interest: {{ info.interest }}</span>
+                <span class="values">Interest: {{ info.interest }}.</span>
               </p>
               </div>
           <Spinner v-else/>
@@ -56,10 +56,10 @@ import { ref } from 'vue';
         font-size: 18px;
     }
     .fname {
-        margin-bottom: 3%;
+        margin-bottom: 6%;
     }
     .intro{
-        margin-bottom: 3%;
+        margin-bottom: 6%;
     }
     @media screen and (max-width: 400px){
         .row-1{
@@ -67,6 +67,11 @@ import { ref } from 'vue';
             display: flex;
             flex-direction: column;
         }
+    }
+    .details{
+        margin-right: 400px;
+        margin-top: 60px;
+        width: 580px;
     }
   </style>
   
