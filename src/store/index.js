@@ -53,8 +53,8 @@ export default createStore({
     },
     async fetchAbout(context){
       try{
-        let {about} = await (await axios.get(portfolioURL)).data
-        context.commit("setAbout", about)
+        let {About} = await (await axios.get(portfolioURL)).data
+        context.commit("setAbout", About)
       } catch(e){
         Swal.fire({
           title: "Error",
@@ -130,7 +130,6 @@ export default createStore({
       }
     }
   },
-
   modules: {
   }
 })
