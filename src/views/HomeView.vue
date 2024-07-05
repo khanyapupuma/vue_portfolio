@@ -1,17 +1,17 @@
 <template>
-<section class="row">
+<section class="row" id="home">
 <LandingSection/>
 </section>
-<section class="row">
+<section class="row" id="about">
   <AboutSection/>
 </section>
-<section class="row">
+<section class="row" id="resume" >
 <ResumeSection/>
 </section>
-<section class="row">
+<section class="row" id="testimonials">
 <TestimonialSection/>
 </section>
-<section class="row">
+<section class="row" id="reachMe">
   <ContactSection/>
 </section>
     

@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container-fluid">
     <router-link class="navbar-brand" href="#">
         <img src="https://khanyapupuma.github.io/all-images/all-images/Images/gtlogo.png" alt="logo" class="img-fluid" loading="lazy">
@@ -10,22 +10,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="#home"><i class="bi bi-house-fill"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#about"><i class="bi bi-file-person"></i> About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#resume">Resume</a>
+          <a class="nav-link" href="#resume"><i class="bi bi-person-vcard"></i> Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#project">Project</a>
+          <a class="nav-link" href="#project"><i class="bi bi-bookshelf"></i> Project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#testimonials">Testimonials</a>
+          <a class="nav-link" href="#testimonials"><i class="bi bi-people-fill"></i> Testimonials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#reachMe">Reach Me</a>
+          <a class="nav-link" href="#reachMe"><i class="bi bi-telephone"></i> Reach Me</a>
         </li>
       </ul>
     </div>

@@ -53,6 +53,23 @@
     .aboutwrap{
         margin-top: 150px;
     }
+    .img{
+        width: 400px;
+        height: 350px;
+    }
+    h1{
+    text-shadow: 2px 2px 4px white;
+    margin-top: 90px;
+  }
+  h2{
+    text-shadow: 2px 2px 4px white;
+  }
+  img{
+    border: solid 4px;
+  } 
+  .container{
+    margin-left: 100px;
+  }
   </style>
   
   
