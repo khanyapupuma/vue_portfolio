@@ -42,6 +42,10 @@ export default {
 
 
 <style scoped>
+li a:hover {
+    background-color: #CBBDBD;
+    ;
+}
 h3 {
   margin: 40px 0 0;
 }

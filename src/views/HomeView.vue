@@ -6,7 +6,7 @@
   <AboutSection/>
 </section>
 <section class="row">
-
+<ResumeSection/>
 </section>
 <section class="row">
 
@@ -23,13 +23,15 @@
   <script>
   import LandingSection from '@/components/LandingSection.vue'
   import AboutSection from '@/components/AboutSection.vue'
-import ContactSection from '@/components/ContactSection.vue';
+import ContactSection from '@/components/ContactSection.vue'
+import ResumeSection from '@/components/ResumeSection.vue'
  export default {
     name: 'NavBar',
     components: {
     LandingSection,
     AboutSection,
-    ContactSection 
+    ContactSection,
+    ResumeSection 
     }
   }
   </script>

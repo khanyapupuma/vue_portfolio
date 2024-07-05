@@ -2,7 +2,7 @@
 
 /* App */
 #app {
-    background-color: #120E0E;
+    background-color: #514a4a;
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 600;
     font-style: italic;
@@ -32,7 +32,7 @@
   }
   .nav-link:hover {
 
-    color:red !important;
+    color: black !important;
 
   }
   
