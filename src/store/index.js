@@ -74,19 +74,6 @@ export default createStore({
         })
       }
     },
-    async fetchExperiences(context){
-      try{
-        let {experiences} = await (await axios.get(portfolioURL)).data
-        context.commit("setExperiences", experiences)
-      } catch(e){
-        Swal.fire({
-          title: "Error",
-          text: "Failed to fetch data experience",
-          icon: "error",
-          timer: 2000
-        })
-      }
-    },
     async fetchSkills(context){
       try{
         let {skills} = await (await axios.get(portfolioURL)).data

@@ -46,7 +46,25 @@
           </div>
         </div>
       </div>
-    </div>  
+    </div> 
+  
+    <div class="container">
+      <div class="resumewrap">
+        <div class="row align-items-center">
+          <h2>My Skills</h2>
+          <div class="col-4 row" v-if="skills?.length">
+            <Card v-for="value in skills" :key="value.id" class="card">
+              <template #cardHeader>
+                <img :src="value.image" alt="" width="360px">
+              </template>
+              <template  #cardBody>
+                 <h2>{{ value.title }}</h2>
+              </template>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </div> 
   </template> 
   
   <script>
@@ -62,11 +80,15 @@
       },
       projects(){
         return this.$store.state.projects
+      },
+      skills(){
+        return this.$store.state.skills
       }
     },
     mounted(){
       this.$store.dispatch('fetchEducation')
        this.$store.dispatch('fetchProjects')
+       this.$store.dispatch('fetchSkills')
     }
      
     
