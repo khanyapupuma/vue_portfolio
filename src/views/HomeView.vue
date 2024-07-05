@@ -9,10 +9,7 @@
 <ResumeSection/>
 </section>
 <section class="row">
-
-</section>
-<section class="row">
-
+<TestimonialSection/>
 </section>
 <section class="row">
   <ContactSection/>
@@ -25,13 +22,15 @@
   import AboutSection from '@/components/AboutSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import ResumeSection from '@/components/ResumeSection.vue'
+import TestimonialSection from '@/components/TestimonialSection.vue'
  export default {
     name: 'NavBar',
     components: {
     LandingSection,
     AboutSection,
     ContactSection,
-    ResumeSection 
+    ResumeSection,
+    TestimonialSection
     }
   }
   </script>
