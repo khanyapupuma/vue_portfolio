@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
 import Swal from 'sweetalert2/dist/sweetalert2'
-const portfolioURL = 'https://khanyapupuma.github.io/Vue-it/vs.code/data.json'
+const portfolioURL = 'https://khanyapupuma.github.io/vueData/data/'
 export default createStore({
   state: {
     jobTitle: null,
@@ -19,13 +19,10 @@ export default createStore({
       state.jobTitle = value
     },
     setAbout(state, value){
-      state.About = value
+      state.about = value
     },
     setEducation(state, value){
       state.education = value
-    },
-    setExperiences(state, value){
-      state.experiences = value
     },
     setSkills(state, value){
       state.skills = value
@@ -53,8 +50,8 @@ export default createStore({
     },
     async fetchAbout(context){
       try{
-        let {About} = await (await axios.get(portfolioURL)).data
-        context.commit("setAbout", About)
+        let {about} = await (await axios.get(portfolioURL)).data
+        context.commit("setAbout", about)
       } catch(e){
         Swal.fire({
           title: "Error",
@@ -64,9 +61,9 @@ export default createStore({
         })
       }
     },
-    async fetcEducation(context){
+    async fetchEducation(context){
       try{
-        let {education} = await (await axios.get(portfolioURL)).data
+        let { education } = await (await axios.get(portfolioURL)).data
         context.commit("setEducation", education)
       } catch(e){
         Swal.fire({
