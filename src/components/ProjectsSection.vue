@@ -1,61 +1,48 @@
 <template>
-  <div>
-   
-    <div class="container">
-      <h1 class="resume">My Resume</h1>
+<div class="container">
       <div class="resumewrap">
         <div class="row align-items-center">
-          <h2>Education</h2>
-          <div class="card-container" v-if="education?.length">
-            <Card v-for="value in education" :key="value.id" class="card">
+          <h1 class="prot">My Projects</h1>
+          <div class="card-container" v-if="projects?.length">
+            <Card v-for="value in projects" :key="value.id" class="card">
               <template #cardHeader>
-                <img :src="value.imageURL" :alt="value.degree" width="300px">
-              </template>
-              <template #cardBody>
-                <h2>{{ value.school }}</h2>
-                <p>{{ value.degree }}</p>
-                <p>{{ value.graduation_year }}</p>
-                <p>{{ value.location }}</p>
+                <img :src="value.image" alt="" width="300px">
+              <!-- </template>
+              <template #cardBody> -->
+                <h2 class="gm">{{ value.projectName }}</h2>
+                <p>{{ value.description }}</p>
+                <a :href="value.vercel"><button>Vercel</button></a>
+                <a :href="value.github"><button><i class="bi bi-github"></i> Github</button></a>
               </template>
             </Card>
-          </div>
-          <div v-else class="d-flex">
-            <div class="spinner-border" role="status">
-            </div>
           </div>
         </div>
       </div>
     </div>
-
-
-    
-  </div>
 </template>
-
 <script>
-import Card from '@/components/Card.vue';
+import  Card from '@/components/Card.vue';
+
 
 export default {
   components: {
     Card
   },
   computed: {
-    education() {
-      return this.$store.state.education;
-    },
-    skills() {
-      return this.$store.state.skills;
+    projects() {
+      return this.$store.state.projects;
     }
   },
   mounted() {
-    this.$store.dispatch('fetchEducation');
+    this.$store.dispatch('fetchProjects');
   }
 }
 </script>
-
 <style scoped>
 
-
+h1{
+    margin-bottom: 100px;
+}
 img {
   height: 300px;
 }
@@ -94,10 +81,19 @@ h2{
   margin-top: 90px;
   margin-bottom: 50px;
 }
+button{
+  width: 90px;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 5px;
+}
+a button:hover {
+    background-color: #000000;
+    ;
+    color: rgb(255, 248, 248);
+}
 .card:hover{
   border-color: rgb(191, 8, 191);
 }
 </style>
-
-
-  

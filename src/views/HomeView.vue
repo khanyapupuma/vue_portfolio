@@ -8,6 +8,12 @@
 <section class="row" id="resume" >
 <ResumeSection/>
 </section>
+<section class="row" id="project">
+<ProjectsSection/>
+</section>
+<section class="row" id="tools">
+<ToolsSection/>
+</section>
 <section class="row" id="testimonials">
 <TestimonialSection/>
 </section>
@@ -22,7 +28,9 @@
   import AboutSection from '@/components/AboutSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 import ResumeSection from '@/components/ResumeSection.vue'
+import ProjectsSection from '@/components/ProjectsSection.vue'
 import TestimonialSection from '@/components/TestimonialSection.vue'
+import ToolsSection from '@/components/ToolsSection.vue'
  export default {
     name: 'NavBar',
     components: {
@@ -30,7 +38,9 @@ import TestimonialSection from '@/components/TestimonialSection.vue'
     AboutSection,
     ContactSection,
     ResumeSection,
-    TestimonialSection
+    TestimonialSection,
+    ProjectsSection,
+    ToolsSection
     }
   }
   </script>

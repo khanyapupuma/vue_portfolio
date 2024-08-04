@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="about">About Me</h1>
+       
         <div class="aboutwrap">
             <div class="row align-items-center">
                 <div class="col-4">
@@ -11,7 +11,7 @@
                     </h2>
                 </div>
                 <div class="col-8" about>
-                    <div v-if="about?.length">
+                    <div v-if="about?.length" class=""> <h1 class="about">About Me</h1>
                   <p class="lead" v-for="(about, index) in about" :key="index">
                       {{ about }}.
                   </p>
@@ -53,6 +53,10 @@
     .aboutwrap{
         margin-top: 150px;
     }
+    .about{
+        margin-bottom: 150px;
+        margin-right: 190px;
+    }
     .img{
         width: 400px;
         height: 350px;
@@ -71,10 +75,3 @@
     margin-left: 100px;
   }
   </style>
-  
-  
-  
-  
-  
-  
-  

@@ -1,0 +1,3 @@
+destructuring
+
+{name} ={ name: "Azabenathi", lname: "Pupuma"}

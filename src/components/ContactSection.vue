@@ -4,11 +4,6 @@
         <main class="hm"><h1>Contact Me</h1></main>
       </div>
       <div class="nov">
-        <h5 class="dc">
-          Contact Me: +27 73 392 6856 <br>
-          Email Me: khalilpupuma@gmail.com
-        </h5>
-        <h3>Please Enter:</h3>
         <div class="ron">
           <div class="form-group">
             <input type="text" placeholder="Your name & surname" class="d" id="nameInput" v-model="form.name"> <br>
@@ -58,11 +53,12 @@
   margin-top: 50px;
   text-align: center;
   width: 500px;
+  padding: 80px;
 }
 
 .d {
-  width: 395px;
-  height: 40px;
+  width: 600px;
+  height: 50px;
   border-radius: 5px;
   margin-left: 40px;
   margin-top: 10px;
@@ -71,10 +67,10 @@
 
 .d1 {
   border-radius: 5px;
-  width: 400px;
-  height: 300px;
+  width: 600px;
+  height: 80px;
   margin-top: 10px;
-  margin-left: 35px;
+  margin-left: 40px;
   margin-bottom: 10px;
   box-sizing: border-box;
   vertical-align: top;
@@ -105,8 +101,8 @@ button {
 
 .button-group {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  /* justify-content: flex-end; */
+  /* align-items: center; */
 }
 
 @media (max-width: 768px) {
@@ -126,8 +122,6 @@ button {
   }
 }
 </style>
-
-  
   <script>
   import Swal from 'sweetalert2';
   import emailjs from 'emailjs-com';
@@ -188,4 +182,3 @@ button {
     }
   };
   </script>
-  

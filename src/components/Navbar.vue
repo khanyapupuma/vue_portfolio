@@ -22,6 +22,9 @@
           <a class="nav-link" href="#project"><i class="bi bi-bookshelf"></i> Project</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="#tools"><i class="bi bi-wrench-adjustable-circle-fill"></i> Tools</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#testimonials"><i class="bi bi-people-fill"></i> Testimonials</a>
         </li>
         <li class="nav-item">
