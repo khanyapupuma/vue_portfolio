@@ -1,35 +1,22 @@
 <template>
-  <div>
-   
-    <div class="container">
-      <h1 class="resume">My Resume</h1>
+<div class="container">
       <div class="resumewrap">
         <div class="row align-items-center">
-          <h2>Education</h2>
-          <div class="card-container" v-if="education?.length">
-            <Card v-for="value in education" :key="value.id" class="card">
+          <h1>My Skills</h1>
+          <div class="card-container" v-if="skills?.length">
+            <Card v-for="value in skills" :key="value.id" class="card">
               <template #cardHeader>
-                <img :src="value.imageURL" :alt="value.degree" width="300px">
+                <img :src="value.image" alt="" width="250px">
               </template>
               <template #cardBody>
-                <h2>{{ value.school }}</h2>
-                <p>{{ value.degree }}</p>
-                <p>{{ value.graduation_year }}</p>
-                <p>{{ value.location }}</p>
+                <h2>{{ value.title }}</h2>
+                <p>{{ value.Proficiency }}</p>
               </template>
             </Card>
-          </div>
-          <div v-else class="d-flex">
-            <div class="spinner-border" role="status">
-            </div>
           </div>
         </div>
       </div>
     </div>
-
-
-    
-  </div>
 </template>
 
 <script>
@@ -40,22 +27,19 @@ export default {
     Card
   },
   computed: {
-    education() {
-      return this.$store.state.education;
-    },
     skills() {
       return this.$store.state.skills;
     }
   },
   mounted() {
-    this.$store.dispatch('fetchEducation');
+    this.$store.dispatch('fetchSkills');
   }
 }
 </script>
-
 <style scoped>
-
-
+h1{
+    margin-bottom: 100px;
+}
 img {
   height: 300px;
 }
@@ -98,6 +82,3 @@ h2{
   border-color: rgb(191, 8, 191);
 }
 </style>
-
-
-  

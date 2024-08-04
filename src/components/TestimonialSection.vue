@@ -10,7 +10,7 @@
               </template>
               <template  #cardBody>
                  <h2>{{ value.name }}</h2>
-                 <p>{{ value.review }}</p>
+                 <p>" {{ value.review }} "</p>
               </template>
             </Card>
           </div>
@@ -34,6 +34,9 @@ export default {
 </script>
 
 <style scoped>
+h1{
+    margin-bottom: 100px;
+}
  img{
     height: 300px;
   }
