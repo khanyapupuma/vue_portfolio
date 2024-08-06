@@ -44,6 +44,8 @@ h1{
   width: 450px;
 }
 .card{
+  color: white;
+  background-color: transparent;
   border: solid 7px;
   border-top-color: rgb(6, 6, 110);
   border-left-color: rgb(6, 6, 100);

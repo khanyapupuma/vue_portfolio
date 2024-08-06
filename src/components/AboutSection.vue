@@ -45,9 +45,12 @@
         margin-top: 60px;
         width: 580px;
     }
+    .col-8{
+        margin-bottom: 140px;
+    }
     .lead{
-        width: 460px;
-        height: 420px;
+        width: 500px;
+        text-align: center;
         margin-left: 150px;
     }
     .aboutwrap{
@@ -70,6 +73,8 @@
   }
   img{
     border: solid 4px;
+    width: 460px;
+    height: 570px;
   } 
   .container{
     margin-left: 100px;

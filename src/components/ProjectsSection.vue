@@ -6,13 +6,11 @@
           <div class="card-container" v-if="projects?.length">
             <Card v-for="value in projects" :key="value.id" class="card">
               <template #cardHeader>
-                <img :src="value.image" alt="" width="300px">
-              <!-- </template>
-              <template #cardBody> -->
                 <h2 class="gm">{{ value.projectName }}</h2>
+                <img :src="value.image" alt="" width="300px" height="300px">
                 <p>{{ value.description }}</p>
-                <a :href="value.vercel"><button>Vercel</button></a>
-                <a :href="value.github"><button><i class="bi bi-github"></i> Github</button></a>
+                <a :href="value.vercel"><button><i class="bi bi-view-stacked"></i> Demo</button></a>
+                <a :href="value.github"><button><i class="bi bi-github"></i> Code</button></a>
               </template>
             </Card>
           </div>
@@ -57,7 +55,7 @@ img {
 .card {
   color: white;
   background-color: transparent;
-  height: 150p;
+  height: 625px;
   border: solid 7px;
   border-top-color: rgb(6, 6, 110);
   border-left-color: rgb(6, 6, 100);
