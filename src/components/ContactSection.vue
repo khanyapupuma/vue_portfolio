@@ -8,11 +8,8 @@
           <div class="form-group">
             <input type="text" placeholder="Your name & surname" class="d" id="nameInput" v-model="form.name"> <br>
           </div>
-          <div class="form-group">
+          <div class="form-group ">
             <input type="text" placeholder="Your email" class="d" id="emailInput" v-model="form.email"> <br>
-          </div>
-          <div class="form-group">
-            <input type="text" placeholder="Phone number" class="d" id="phone" v-model="form.phone"> <br>
           </div>
           <div class="form-group">
             <textarea name="" id="" rows="10" cols="40" class="d1" placeholder="Message to Us" v-model="form.message"></textarea>
@@ -24,10 +21,19 @@
           </div>
           <p v-if="error" class="error-message">{{ error }}</p>
         </div>
-      </div>
-      <div class="img">
-        <img src="https://khanyapupuma.github.io/all-images/all-images/Images/file.png" alt="" height="390px">
-        <h1>THANKS FOR VISITING!</h1>
+        <div class="links">
+          <h2>Direct Contact Me</h2>
+          <br>
+          <p class="p">
+            <a href="https://www.linkedin.com/in/khanya-pupuma-41a171324/"><i class="bi bi-linkedin"></i> </a>My LinkedIn
+            <br>
+            <a href=""><i class="bi bi-envelope-at-fill"></i></a> khalilpupuma@gmail.com
+            <br>
+            <a href=""><i class="bi bi-telephone-fill"></i></a> +27 73 392 6856 or  +27 63 646 9674
+            <br>
+            <a href=""><i class="bi bi-geo-alt-fill"></i></a> Philippi, Cape Town
+          </p>
+        </div>
       </div>
     </div>
   </template>
@@ -39,21 +45,41 @@
   background-size: 100% 100%;
   padding: 30px;
 }
+.p{
+  
+  color: white;
+}
 
 .but {
-  margin-left: 50px;
+  margin-left: 110px;
   color: red;
   background-color: #000000;
   border-radius: 3px;
   margin-bottom: 5px;
 }
+h2{
+  color: white;
+}
 
 .nov {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
   margin-left: 25px;
   margin-top: 50px;
   text-align: center;
-  width: 500px;
+  width: 100%;
   padding: 80px;
+}
+
+.ron {
+  margin-right: 20px;
+  background-color: rgb(42, 42, 42);
+  width: 60%; 
+  height: auto;
+  align-content: center;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .d {
@@ -68,19 +94,50 @@
 .d1 {
   border-radius: 5px;
   width: 600px;
-  height: 80px;
+  height: 180px;
   margin-top: 10px;
   margin-left: 40px;
   margin-bottom: 10px;
   box-sizing: border-box;
   vertical-align: top;
 }
+.links {
+  background-color: rgb(52, 52, 52); 
+  width: 35%; 
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
 
+.links a {
+  text-decoration: none;
+  color: #337ab7;
+  transition: color 0.2s ease-in-out;
+}
+
+.links p {
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+.links a {
+  text-decoration: none; 
+  color: #337ab7; 
+  transition: color 0.2s ease-in-out; 
+}
+
+.links a:hover {
+  color: #23527c; 
+}
+
+.links i {
+  margin-right: 5px; 
+}
 h1 {
-  text-shadow: 2px 2px 4px white;
+  text-shadow: 2px 2px 4px rgb(30, 28, 28);
   margin-top: 90px;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
@@ -88,6 +145,11 @@ h1 {
   color: #FF8C00;
   font-weight: bold;
   margin-top: 0.5rem;
+}
+.but:hover{
+  color: #3ab312;
+  background-color: #05242b;
+  transform: scale(1.1);
 }
 
 button {

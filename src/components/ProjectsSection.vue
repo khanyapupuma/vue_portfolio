@@ -1,26 +1,30 @@
 <template>
-<div class="container">
-      <div class="resumewrap">
-        <div class="row align-items-center">
-          <h1 class="prot">My Projects</h1>
-          <div class="card-container" v-if="projects?.length">
-            <Card v-for="value in projects" :key="value.id" class="card">
-              <template #cardHeader>
-                <h2 class="gm">{{ value.projectName }}</h2>
-                <img :src="value.image" alt="" width="300px" height="300px">
-                <p>{{ value.description }}</p>
+  <div class="container">
+    <div class="resumewrap">
+      <div class="row align-items-center">
+        <h1 class="prot">My Projects</h1>
+        <div class="card-container" v-if="projects?.length">
+          <Card v-for="value in projects" :key="value.id" class="card">
+            <template #cardHeader>
+              <h2 class="gm">{{ value.projectName }}</h2>
+              <img :src="value.image" alt="" class="img">
+              <p>{{ value.description }}</p>
+            </template>
+            <template #cardBody>
+              <div class="buttons">
                 <a :href="value.vercel"><button><i class="bi bi-view-stacked"></i> Demo</button></a>
-                <a :href="value.github"><button><i class="bi bi-github"></i> Code</button></a>
-              </template>
-            </Card>
-          </div>
+                <a :href="value.github"><button><i class="bi bi-github"></i> Github</button></a>
+              </div>
+            </template>
+          </Card>
         </div>
       </div>
     </div>
+  </div>
 </template>
-<script>
-import  Card from '@/components/Card.vue';
 
+<script>
+import Card from '@/components/Card.vue';
 
 export default {
   components: {
@@ -36,13 +40,15 @@ export default {
   }
 }
 </script>
-<style scoped>
 
-h1{
-    margin-bottom: 100px;
+<style scoped>
+h1 {
+  margin-bottom: 100px;
 }
+
 img {
-  height: 300px;
+  border-radius: 2px;
+  height: 120px; 
 }
 
 .card-container {
@@ -53,45 +59,55 @@ img {
 }
 
 .card {
-  color: white;
-  background-color: transparent;
-  height: 625px;
-  border: solid 7px;
-  border-top-color: rgb(6, 6, 110);
-  border-left-color: rgb(6, 6, 100);
-  border-bottom-color: rgb(112, 0, 0);
-  border-right-color: rgb(152, 17, 17);
+  color: rgb(92, 78, 0);
+  background-color: rgb(42, 42, 42);
+  height: 450px; 
   flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
   margin-bottom: 20px;
   max-width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
 }
 
-.gm{
-  margin-top: 90px;
+.gm {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-h1 {
-  text-shadow: 2px 2px 4px white;
-  margin-top: 90px;
+/* p {
+  text-align: center;
+  color: rgb(210, 179, 0);
+  margin-bottom: 15px;
+} */
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }
-h2{
-  margin-top: 90px;
-  margin-bottom: 50px;
-}
-button{
+
+button {
   width: 90px;
+  background-color: #dbd7b9;
   color: black;
   font-weight: bold;
   border-radius: 4px;
   margin: 5px;
 }
+
 a button:hover {
-    background-color: #000000;
-    ;
-    color: rgb(255, 248, 248);
+  background-color: #000000;
+  color: rgb(255, 248, 248);
 }
-.card:hover{
+
+.card:hover {
+  border-width: 2px;
   border-color: rgb(191, 8, 191);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 217, 0);
 }
 </style>

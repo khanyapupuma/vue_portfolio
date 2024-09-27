@@ -5,18 +5,19 @@
 <section class="row" id="about">
   <AboutSection/>
 </section>
+<section class="row" id="tools">
+<ToolsSection/>
+</section>
 <section class="row" id="resume" >
 <ResumeSection/>
 </section>
 <section class="row" id="project">
 <ProjectsSection/>
 </section>
-<section class="row" id="tools">
-<ToolsSection/>
-</section>
-<section class="row" id="testimonials">
+
+<!-- <section class="row" id="testimonials">
 <TestimonialSection/>
-</section>
+</section> -->
 <section class="row" id="reachMe">
   <ContactSection/>
 </section>
@@ -29,7 +30,7 @@
 import ContactSection from '@/components/ContactSection.vue'
 import ResumeSection from '@/components/ResumeSection.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
-import TestimonialSection from '@/components/TestimonialSection.vue'
+// import TestimonialSection from '@/components/TestimonialSection.vue'
 import ToolsSection from '@/components/ToolsSection.vue'
  export default {
     name: 'NavBar',
@@ -38,7 +39,7 @@ import ToolsSection from '@/components/ToolsSection.vue'
     AboutSection,
     ContactSection,
     ResumeSection,
-    TestimonialSection,
+    // TestimonialSection,
     ProjectsSection,
     ToolsSection
     }

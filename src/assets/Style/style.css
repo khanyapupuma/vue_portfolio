@@ -2,14 +2,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 /* App */
 #app {
-    background-color: #221c1c;
+    background-color: #0705213a;
+    background-color: linear;
     font-family: 'Open Sans', Arial, sans-serif;
     font-weight: 600;
-    font-style: italic;
+    /* font-style: italic; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: white;
+    color: rgb(30, 28, 28);
   }
   ::-webkit-scrollbar{
     display: none;

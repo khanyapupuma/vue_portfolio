@@ -9,7 +9,7 @@
           <div class="card-container" v-if="education?.length">
             <Card v-for="value in education" :key="value.id" class="card">
               <template #cardHeader>
-                <img :src="value.imageURL" :alt="value.degree" width="300px">
+                <img :src="value.imageURL" :alt="value.degree" width="240px">
               </template>
               <template #cardBody>
                 <h2>{{ value.school }}</h2>
@@ -57,10 +57,11 @@ export default {
 
 
 img {
-  height: 300px;
+  height: 200px;
 }
 
 .card-container {
+  
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -68,14 +69,10 @@ img {
 }
 
 .card {
-  color: white;
-  background-color: transparent;
-  height: 150p;
-  border: solid 7px;
-  border-top-color: rgb(6, 6, 110);
-  border-left-color: rgb(6, 6, 100);
-  border-bottom-color: rgb(112, 0, 0);
-  border-right-color: rgb(152, 17, 17);
+  box-shadow: 4px 4px 6px  rgba(0, 0, 0, 0.4);
+  color: rgb(92, 78, 0);
+  background-color: rgb(42, 42, 42);
+  height: 250p;
   flex: 1 1 calc(33.333% - 20px);
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -87,7 +84,7 @@ img {
 }
 
 h1 {
-  text-shadow: 2px 2px 4px white;
+  text-shadow: 2px 2px 4px rgb(19, 18, 18);
   margin-top: 90px;
 }
 h2{
@@ -95,7 +92,11 @@ h2{
   margin-bottom: 50px;
 }
 .card:hover{
+  border-width: 2px;
   border-color: rgb(191, 8, 191);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
+  color:rgb(255, 217, 0) ;
 }
 </style>
 
