@@ -16,8 +16,8 @@
           </div>
           <br>
           <div class="button-group">
-            <button type="button" class="but" @click="clearForm">Clear</button>
-            <button type="submit" class="but" @click="handleSubmit">Send Message</button>
+            <button type="button" class="but but2" @click="clearForm">Clear</button>
+            <button type="submit" class="but but1" @click="handleSubmit">Send Message</button>
           </div>
           <p v-if="error" class="error-message">{{ error }}</p>
         </div>
@@ -25,13 +25,13 @@
           <h2>Direct Contact Me</h2>
           <br>
           <p class="p">
-            <a href="https://www.linkedin.com/in/khanya-pupuma-41a171324/"><i class="bi bi-linkedin"></i> </a>My LinkedIn
+            <a href="https://www.linkedin.com/in/khanya-pupuma-41a171324/" target="_blank"><i class="bi bi-linkedin"></i> </a>My LinkedIn
             <br>
-            <a href=""><i class="bi bi-envelope-at-fill"></i></a> khalilpupuma@gmail.com
+            <a href="mailto:khalilpupuma@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i></a> khalilpupuma@gmail.com
             <br>
-            <a href=""><i class="bi bi-telephone-fill"></i></a> +27 73 392 6856 or  +27 63 646 9674
+            <a href="tel:+27733926856" target="_blank"><i class="bi bi-telephone-fill"></i></a> +27 73 392 6856 or  +27 63 646 9674
             <br>
-            <a href=""><i class="bi bi-geo-alt-fill"></i></a> Philippi, Cape Town
+            <a href="https://www.google.com/maps/place/Philippi,+Cape+Town/@-34.0353778,18.576035,13z/data=!3m1!4b1!4m6!3m5!1s0x1dcc45d16205a045:0x422d16fa23c5b3cb!8m2!3d-34.0187678!4d18.5634409!16s%2Fm%2F05h4xnc?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="bi bi-geo-alt-fill"></i></a> Philippi, Cape Town
           </p>
         </div>
       </div>
@@ -46,13 +46,13 @@
   padding: 30px;
 }
 .p{
-  
+  text-align: left;
   color: white;
 }
 
 .but {
   margin-left: 110px;
-  color: red;
+  color: rgb(255, 255, 255);
   background-color: #000000;
   border-radius: 3px;
   margin-bottom: 5px;
@@ -103,13 +103,14 @@ h2{
 }
 .links {
   background-color: rgb(52, 52, 52); 
-  width: 35%; 
+  width: 28%; 
   height: auto;
   padding: 20px;
   border-radius: 20px;
 }
 
 .links a {
+  margin: 15px;
   text-decoration: none;
   color: #337ab7;
   transition: color 0.2s ease-in-out;
@@ -146,9 +147,12 @@ h1 {
   font-weight: bold;
   margin-top: 0.5rem;
 }
-.but:hover{
+.but1:hover{
   color: #3ab312;
-  background-color: #05242b;
+  transform: scale(1.1);
+}
+.but2:hover{
+  color: red;
   transform: scale(1.1);
 }
 
