@@ -68,7 +68,7 @@ onMounted(() => {
 h1,
 h2 {
   font-weight: bold;
-  color: white;
+  /* color: white; */
   text-shadow: 2px 2px  4px rgba(0, 0, 0, 0.944);
 }
 
@@ -84,7 +84,7 @@ h2 {
 /* Base styles remain the same */
 h1 {
   text-shadow: 2px 2px 4px rgb(30, 28, 28);
-  color: rgb(0, 0, 0);
+  /* color: rgb(255, 255, 255); */
   font-weight: bold;
   text-align: center;
 }
