@@ -116,6 +116,18 @@ h2{
   box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
   color:rgb(255, 217, 0) ;
 }
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 </style>
 
 

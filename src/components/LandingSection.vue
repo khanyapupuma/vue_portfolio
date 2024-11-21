@@ -2,21 +2,21 @@
   <div class="container">
     <div class="row vh-100 align-items-center">
       <div class="col">
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center all">
           <!-- Title Section -->
-          <div id="details" class="col-md-6">
+          <div id="details" class="col-md-6 ">
             <h1 class="display-1">Welcome<br />I AM <br />Khanya Pupuma</h1>
             <h3 v-if="title"><span>{{ title }}</span></h3>
             <Spinner v-else />
           </div>
           
           <!-- Image Section -->
-          <div class="col-md-6">
+          <div class="col-md-6 ">
             <img
               src="https://khanyapupuma.github.io/all-images/all-images/Images/20240422_094850.jpg"
               alt="my image"
               loading="lazy"
-              class="img-fluid img"
+              class="img-fluid img image"
               width="390px"
             />
           </div>
@@ -79,9 +79,6 @@ h2 {
   border: solid 3px rgba(0, 0, 0, 0.411);
 }
 
-/* Mobile responsive */
-
-/* Base styles remain the same */
 h1 {
   text-shadow: 2px 2px 4px rgb(30, 28, 28);
   /* color: rgb(255, 255, 255); */
@@ -101,48 +98,48 @@ p {
   display: block; /* Ensures paragraphs are properly centered */
 }
 
-/* Tablet devices (max-width: 768px) */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
-    margin-left: 15px;
-    margin-right: 15px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
   }
+  .title {
+        order: 1; /* Ensure title comes first */
+    }
 
-  p {
-    font-size: 14px; /* Smaller font size for readability */
-  }
+    .image {
+        order: 2; /* Ensure image comes second */
+        display: center;
+    }
 
   h1 {
-    font-size: 26px; /* Adjust heading size */
+    font-size: 2.5rem;
   }
 
   .aboutwrap {
-    margin-top: 50px; /* Reduce top margin */
-  }
-}
-
-/* Mobile devices (max-width: 480px) */
-@media screen and (max-width: 480px) {
-  .container {
-    margin: 0 10px; /* Minimal margins for small screens */
-  }
-
-  h1 {
-    font-size: 22px; /* Further reduce heading size */
+    margin-top: 50px;
   }
 
   p {
-    font-size: 12px; /* Smaller text size for readability */
-    margin-bottom: 10px; /* Reduce space between paragraphs */
+    font-size: 1.2rem;
+  }
+  .all {
+    display: block;
+    
+    flex-wrap: wrap;
+  }
+  .all{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  }
+  .all > div {
+    width: 100%; /* Optional: Ensures each child takes full width */
   }
 
-  .aboutwrap {
-    margin-top: 30px; /* Reduce top margin further */
-  }
-
-  .img {
-    width: 100%; /* Adjust images to fit within the container */
-    height: auto; /* Maintain aspect ratio */
+  .img{
+    width: 190px;
   }
 }
 

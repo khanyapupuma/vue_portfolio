@@ -96,6 +96,20 @@ img:hover{
   text-shadow: 4px 4px  8px rgb(255, 255, 255);
 }
 /* Responsiveness(Mobile) */
-
-
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 10px;
+  }
+  .aboutwrap {
+    margin-top: 50px;
+  }
+  .para {
+    margin-left: 0;
+    width: auto;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>

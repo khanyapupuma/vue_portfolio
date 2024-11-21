@@ -29,7 +29,7 @@
             <br>
             <a href="mailto:khalilpupuma@gmail.com" target="_blank"><i class="bi bi-envelope-at-fill"></i></a> khalilpupuma@gmail.com
             <br>
-            <a href="tel:+27733926856" target="_blank"><i class="bi bi-telephone-fill"></i></a> +27 73 392 6856 or  +27 63 646 9674
+            <a href="tel:+27733926856" target="_blank"><i class="bi bi-telephone-fill"></i></a> +27 73 392 6856
             <br>
             <a href="https://www.google.com/maps/place/Philippi,+Cape+Town/@-34.0353778,18.576035,13z/data=!3m1!4b1!4m6!3m5!1s0x1dcc45d16205a045:0x422d16fa23c5b3cb!8m2!3d-34.0187678!4d18.5634409!16s%2Fm%2F05h4xnc?entry=ttu&g_ep=EgoyMDI0MTAwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank"><i class="bi bi-geo-alt-fill"></i></a> Philippi, Cape Town
           </p>
@@ -171,22 +171,131 @@ button {
   /* align-items: center; */
 }
 
-@media (max-width: 768px) {
-  .nov {
-    width: 100%;
-    margin-left: 0;
+/* @media screen and (max-width: 768px) {
+    .container {
+      margin: 0 10px;
+    }
+    .dim {
+      margin-top: 50px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+  } */
+
+  /* Base Styles */
+
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .hm h1 {
+    font-size: 1.2rem;
   }
 
-  .d,
-  .d1 {
-    width: calc(100% - 80px);
-    margin-left: 40px;
+  .dim {
+    margin: 10px;
+  }
+
+  .ron{
+    justify-items: center;
+  }
+
+  .ron, .links {
+    width: 100%;
+    /* padding: 10px; */
+  }
+
+  .d, .d1 {
+    /* margin-right: 10px; */
+    max-width: 250px;
+    padding: 8px;
+  }
+
+  .links p {
+    font-size: 0.9rem;
+  }
+
+  .links a {
+    font-size: 1rem;
+  }
+  .rim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.dim {
+  margin: 10px 0;
+}
+
+.hm h1 {
+  font-size: 1.8rem;
+}
+
+.nov {
+  display: flex;
+  flex-direction: column; /* Stack items vertically for smaller screens */
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.ron, .links {
+  width: 90%; 
+  margin-bottom: 20px; 
+}
+
+/* .d {
+  width: 100%; 
+  max-width: 400px; 
+  padding: 10px;
+} */
+
+/* .d1 {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+} */
+
+.links p, .links a {
+  justify-content: left;
+}
+
+.button-group {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-group button {
+  margin: 5px;
+}
+
+}
+/* Tablet View */
+@media screen and (max-width: 768px) {
+  .hm h1 {
+    font-size: 1.5rem;
+  }
+
+  .ron, .links {
+    width: 95%;
   }
 
   .button-group {
-    justify-content: center;
+    flex-direction: column;
   }
+
+  .but {
+    width: 100%;
+  }
+  .d, .d1 {
+    max-width: 250px;
+    padding: 8px;
+  }
+
 }
+
 </style>
   <script>
   import Swal from 'sweetalert2';
@@ -247,4 +356,6 @@ button {
       }
     }
   };
+ 
+
   </script>

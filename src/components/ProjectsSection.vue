@@ -132,4 +132,20 @@ a button:hover {
 .img:hover{
   filter: grayscale(0%);
 }
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .img{
+    width: 300px;
+  }
+}
+
 </style>

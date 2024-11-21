@@ -12,9 +12,9 @@
     text-align: center;
     color: rgb(30, 28, 28);
   }
-  ::-webkit-scrollbar{
+  /* ::-webkit-scrollbar{
     display: none;
-  }
+  } */
   nav {
     padding: 30px;
   }
@@ -54,8 +54,26 @@ img[alt= 'logo']{
 .nav-link{
     color:#CBBDBD ;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+}
 /* Footer */
-:is(.wrapper){
+/* :is(.wrapper){
     display: grid;
     grid-template-rows: auto minmax(100dvh, 100%)auto;
+} */
+
+  
+  @media (max-width: 768px) {
+    :is(.container, .nav, .footer, .home, .about, .resume, .projects, .tools, .testimonials, .contact) {
+      max-width: 90vw;
+      margin: 0 auto;
+    }
+  }
+
+
+.wrapper{
+  max-width: 100vw;
+  overflow-x: hidden;
 }

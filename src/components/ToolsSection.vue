@@ -15,7 +15,6 @@
             </template>
           </Card>
         </div>
-       
       </div>
       <h1>Soft Skills</h1>
       <div class="card-container">
@@ -36,9 +35,7 @@
                     <h6>Communication</h6>
                     
                 </template>
-           
               </Card>
-              
         </div>
     </div>
   </div>
@@ -46,6 +43,7 @@
 
 <script>
 import Card from '@/components/Card.vue';
+
 
 export default {
   components: {
@@ -122,7 +120,15 @@ h2:hover{
   
 
 }
-/* p:hover{
-  color: rgb(255, 217, 0);
-} */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
 </style>

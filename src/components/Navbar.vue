@@ -45,6 +45,7 @@ export default {
 
 
 <style scoped>
+
 li a:hover {
     background-color: #CBBDBD;
     ;
@@ -66,5 +67,16 @@ a {
 nav{
   box-shadow: rgb(69, 68, 68) 2px 4px 2px;
   background-color: #000000;
+   }
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li {
+    margin: 10px 0;
+  }
 }
 </style>
