@@ -290,7 +290,8 @@ button {
     width: 100%;
   }
   .d, .d1 {
-    max-width: 250px;
+    max-width: 40%;
+    margin-left: 5px;
     padding: 8px;
   }
 
@@ -307,7 +308,6 @@ button {
         form: {
           name: '',
           email: '',
-          phone: '',
           message: ''
         },
         error: '',
@@ -317,7 +317,7 @@ button {
     methods: {
       handleSubmit() {
         this.error = '';
-        if (!this.form.name || !this.form.email || !this.form.phone || !this.form.message) {
+        if (!this.form.name || !this.form.email || !this.form.message) {
           this.error = "Please complete all fields before submitting.";
           return;
         }
@@ -349,7 +349,6 @@ button {
         this.form = {
           name: '',
           email: '',
-          phone: '',
           message: ''
         };
         this.error = '';

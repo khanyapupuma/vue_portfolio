@@ -56,7 +56,7 @@ h1 {
 img {
   border-radius: 2px;
   height: 220px; 
-  width: fit-content;
+  width: 80%;
   opacity: 1; /* Default opacity */
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
@@ -143,9 +143,9 @@ a button:hover {
     max-width: 100%;
   }
 
-  .img{
+  /* .img{
     width: 300px;
-  }
+  } */
 }
 
 </style>
